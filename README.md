@@ -30,6 +30,8 @@ Azure subscription.
 
 - `Azure Location`: The Azure location where our resources will be deployed.
 - `Azure Subscription`: The Azure Subscription where our resources will be dployed.
+
+
 ![image](https://user-images.githubusercontent.com/60293387/207798647-68bf779e-f7dc-44fb-8667-c58ab57ac3ed.png)
 
 
@@ -56,13 +58,23 @@ This application utilizes the following Azure resources:
 ![image](https://user-images.githubusercontent.com/60293387/207798901-09a84b75-8518-4d90-85c6-91f9f4042b5a.png)
 ![image](https://user-images.githubusercontent.com/60293387/207799044-db28dfcd-38b7-44b8-b4fb-2c05220912c0.png)
 
+###
+
+
 - [**Azure Cosmos DB API for MongoDB**](https://docs.microsoft.com/azure/cosmos-db/mongodb/mongodb-introduction) for storage
+
 ![image](https://user-images.githubusercontent.com/60293387/207799229-5ad691d6-2db1-4d58-86be-238ffa60fc0e.png)
+
 - [**Azure Monitor**](https://docs.microsoft.com/azure/azure-monitor/) for monitoring and logging
+
 ![image](https://user-images.githubusercontent.com/60293387/207799915-79469575-231a-4750-9855-d569886eb3ca.png)
+
 - [**Azure App Insight**](https://portal.azure.com/#view/HubsExtension/BrowseResource/resourceType/microsoft.insights%2Fcomponents) for app log trail and insight
+
 ![image](https://user-images.githubusercontent.com/60293387/207800336-4780ddf1-6a99-408c-88f0-568e85970d2e.png)
+
 - [**Azure Key Vault**](https://docs.microsoft.com/azure/key-vault/) for securing secrets
+
 ![image](https://user-images.githubusercontent.com/60293387/207800076-344a8d0c-0daf-40fa-8180-fb762aa77abd.png)
 
 Here's a high level architecture diagram that illustrates these components. Notice that these are all contained within a single [resource group](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal), that will be created for we when we create the resources.
