@@ -123,6 +123,9 @@ To help with monitoring applications, the Azure Dev CLI provides a `monitor` com
   ```bash
   azd monitor --logs
   ```
+  ![image](https://user-images.githubusercontent.com/60293387/207823620-8804510d-a16d-42ca-a8e1-2f0f8cf85496.png)
+![image](https://user-images.githubusercontent.com/60293387/207823956-5a953277-09b8-484b-87e3-e343fa305f27.png)
+
 
 #### Run and Debug Locally
 
