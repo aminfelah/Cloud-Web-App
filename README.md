@@ -67,9 +67,11 @@ This application utilizes the following Azure resources:
 
 Here's a high level architecture diagram that illustrates these components. Notice that these are all contained within a single [resource group](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal), that will be created for we when we create the resources.
 
-<img src="assets/resources.png" width="60%" alt="Application architecture diagram"/>
-
+![image](https://user-images.githubusercontent.com/60293387/207819475-aab47c0b-e412-4550-b763-c6e1c7c7be78.png)
 > This template provisions resources to an Azure subscription that we will select upon provisioning them. Please refer to the [Pricing calculator for Microsoft Azure](https://azure.microsoft.com/pricing/calculator/) and, if needed, update the included Azure resource definitions found in `infra/main.bicep` to suit our needs.
+### Bicep For Infrastructure as Code (IaC) 
+Bicep is a language for declarative deployment of Azure resources. You can use Bicep instead of JSON to develop your Azure Resource Manager models (ARM models).
+![image](https://user-images.githubusercontent.com/60293387/207821566-3ff39e97-abda-47a1-9971-502c4e50eb30.png)
 
 ### Application Code
 
@@ -90,6 +92,7 @@ At this point, we have a complete application deployed on Azure. But there is mu
 This template includes a GitHub Actions pipeline configuration file that will deploy our application whenever code is pushed to the main branch. we can find that pipeline file here: `.github/workflows`.
 
 Setting up this pipeline requires us to give GitHub permission to deploy to Azure on our behalf, which is done via a Service Principal stored in a GitHub secret named `AZURE_CREDENTIALS`. The `azd pipeline config` command will automatically create a service principal for we.
+![image](https://user-images.githubusercontent.com/60293387/207821729-ab429f63-fa16-46cd-9fe5-7dcb0e89e816.png)
 
 ```bash
 azd pipeline config
